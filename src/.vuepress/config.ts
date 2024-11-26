@@ -11,12 +11,7 @@ import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 
 export default defineUserConfig({
-<<<<<<< HEAD
-  base: "/bolg/",
-=======
   base:"/bolg/",
->>>>>>> b72970f7 (yfs)
-
   lang: "zh-CN",
   title: "YFS",
   description: "YFS的博客",
