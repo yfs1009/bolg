@@ -1,11 +1,11 @@
-import { hasGlobalComponent } from "D:/桌面数据/myblog/blog/node_modules/@vuepress/helper/lib/client/index.js";
+import { hasGlobalComponent } from "D:/桌面数据/mybolg/新建文件夹/blog/node_modules/@vuepress/helper/lib/client/index.js";
 
-import { useScriptTag } from "D:/桌面数据/myblog/blog/node_modules/@vueuse/core/index.mjs";
-import FontIcon from "D:/桌面数据/myblog/blog/node_modules/vuepress-plugin-components/lib/client/components/FontIcon.js";
-import Badge from "D:/桌面数据/myblog/blog/node_modules/vuepress-plugin-components/lib/client/components/Badge.js";
-import VPCard from "D:/桌面数据/myblog/blog/node_modules/vuepress-plugin-components/lib/client/components/VPCard.js";
+import { useScriptTag } from "D:/桌面数据/mybolg/新建文件夹/blog/node_modules/@vueuse/core/index.mjs";
+import FontIcon from "D:/桌面数据/mybolg/新建文件夹/blog/node_modules/vuepress-plugin-components/lib/client/components/FontIcon.js";
+import Badge from "D:/桌面数据/mybolg/新建文件夹/blog/node_modules/vuepress-plugin-components/lib/client/components/Badge.js";
+import VPCard from "D:/桌面数据/mybolg/新建文件夹/blog/node_modules/vuepress-plugin-components/lib/client/components/VPCard.js";
 
-import "D:/桌面数据/myblog/blog/node_modules/vuepress-plugin-components/lib/client/styles/sr-only.scss";
+import "D:/桌面数据/mybolg/新建文件夹/blog/node_modules/vuepress-plugin-components/lib/client/styles/sr-only.scss";
 
 export default {
   enhance: ({ app }) => {

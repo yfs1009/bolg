@@ -1,3 +1,4 @@
+
 name: 部署文档
 
 on:
@@ -19,6 +20,8 @@ jobs:
           # 如果你文档需要 Git 子模块，取消注释下一行
           # submodules: true
 
+
+
       - name: 设置 Node.js
         uses: actions/setup-node@v4
         with:
@@ -33,18 +36,15 @@ jobs:
       - name: 构建文档
         env:
           NODE_OPTIONS: --max_old_space_size=8192
-        run: |
+        run: |-
           npm run docs:build
-          touch src/.vuepress/dist/.nojekyll
+          > src/.vuepress/dist/.nojekyll
 
       - name: 部署文档
         uses: JamesIves/github-pages-deploy-action@v4
+        env:
+          GITHUB_TOKEN:${{secrets.ACCESS_TOKEN}}
         with:
-          # 使用 GitHub Actions 密钥中的 ACCESS_TOKEN
-          token: ${{ secrets.ACCESS_TOKEN }}
-          # 部署到的分支
+          # 部署文档
           branch: blog-pages
-          # 构建输出目录
           folder: src/.vuepress/dist
-          # 提交信息
-          commit_message: 'chore: auto deploy'
