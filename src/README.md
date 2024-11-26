@@ -11,7 +11,7 @@ projects:
   - icon: project
     name: 招标
     desc: 新标点项目
-    link: http://marker-new.com/outside/#/homepage
+    # link: https://链接地址
 
   - icon: link
     name: 小程序
